@@ -18,7 +18,7 @@ const createAccount = () => {
   const [nfts, setNFTs] = useState([]);
 
   useEffect(() => {
-    const eventSource = new EventSource('http://localhost:4000/api/v1/collection');
+    const eventSource = new EventSource('https://api.thedaygalpuclub.com/api/v1/collection');
 
     eventSource.addEventListener('nftCollection', (event) => {
     const data = JSON.parse(event.data);
@@ -62,7 +62,7 @@ const createAccount = () => {
     };
   
     try {
-        const response = await fetch("http://localhost:4000/api/v1/collection", {
+        const response = await fetch("https://api.thedaygalpuclub.com/api/v1/collection", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

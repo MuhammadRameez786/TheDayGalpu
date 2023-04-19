@@ -33,7 +33,7 @@ export const acountLogin = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:4000/api/v1/users/login",
+      "https://api.thedaygalpuclub.com/api/v1/users/login",
       { email, password },
       config
     );
@@ -69,7 +69,7 @@ export const register = (name, email, password, photo) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:4000/api/v1/users/signup",
+      "https://api.thedaygalpuclub.com/api/v1/users/signup",
       { name, photo, email, password },
       config
     );
@@ -180,7 +180,7 @@ export const getAllusers = () => async (dispatch) => {
   };
 
   try {
-    const { data } = await axios.get("http://localhost:4000/api/v1/users", config);
+    const { data } = await axios.get("https://api.thedaygalpuclub.com/api/v1/users", config);
 
     dispatch({ type: FETCH_TOP_5_NFTS_SUCCESS, payload: data });
     console.log("Data received from API", data);

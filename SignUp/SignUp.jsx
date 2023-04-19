@@ -26,7 +26,7 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:4000/api/v1/users/signup";
+			const url = "https://api.thedaygalpuclub.com/api/v1/users/signup";
 			const { data: res } = await axios.post(url, data);
 			setMsg(res.message);
 		} catch (error) {
@@ -45,15 +45,7 @@ const SignUp = () => {
   //   e.preventDefault();
   //   const data = { name, email, password, passwordConfirm}
 
-  //   let res = await fetch('http://localhost:4000/api/v1/users/signup', {
-  //     method:'POST',
-  //     headers: {
-  //       'Content-Type' : 'application/json',
-  //     },
-  //     body:JSON.stringify(data),
-  //   })
-  //   let response = await res.json()
-  //   console.log(response)
+  // 
     
     
   //   setName('')

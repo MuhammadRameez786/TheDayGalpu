@@ -14,7 +14,7 @@ import images from "../../img";
 const NFTCard = () => {
   const [nfts, setNFTs] = useState([]);
   useEffect(() => {
-    const eventSource = new EventSource("http://localhost:4000/api/v1/nfts");
+    const eventSource = new EventSource("https://api.thedaygalpuclub.com/api/v1/nfts");
     eventSource.addEventListener("update", (event) => {
       const data = JSON.parse(event.data);
       setNFTs(data);

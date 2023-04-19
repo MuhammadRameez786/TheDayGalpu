@@ -23,7 +23,7 @@ const client = ipfsHttpClient({
   protocol: "https",
   headers: {
     authorization: auth,
-    "Access-Control-Allow-Origin": "http://localhost:3000",
+    "Access-Control-Allow-Origin": "https://thedaygalpuclub.netlify.app",
   },
 });
 
@@ -184,7 +184,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
       const apiData = { name, price: ethers.utils.formatEther(price), image, description, website, royalties, fileSize, seller: transaction.from, collectionName };
       console.log("APIData", apiData);
   
-      const apiResponse = await axios.post("http://localhost:4000/api/v1/nfts", apiData);
+      const apiResponse = await axios.post("https://api.thedaygalpuclub.com/api/v1/nfts", apiData);
       console.log(apiResponse.data);
     } catch (error) {
       setError("error while creating sale");

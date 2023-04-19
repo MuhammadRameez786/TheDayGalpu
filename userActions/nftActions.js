@@ -27,7 +27,7 @@ export const getNft = (id) => async (dispatch) => {
 
     try {
       const response = await axios.get(
-        `http://localhost:4000/api/v1/nfts/${id}`, config);
+        `https://api.thedaygalpuclub.com/api/v1/nfts/${id}`, config);
       dispatch({
         type: GET_NFT_SUCCESS,
         payload: response.data,
@@ -52,7 +52,7 @@ export const updateNft = (id, data) => async (dispatch) => {
   dispatch({ type: UPDATE_NFT_REQUEST });
 
   try {
-    const { data } = await axios.patch(`http://localhost:4000/api/v1/nfts/${id}`, data);
+    const { data } = await axios.patch(`https://api.thedaygalpuclub.com/api/v1/nfts/${id}`, data);
 
     dispatch({
       type: UPDATE_NFT_SUCCESS,
@@ -78,7 +78,7 @@ export const getTop5Nfts = () => async (dispatch) => {
   };
 
   try {
-    const response = await axios.get("http://localhost:4000/api/v1/nfts/top-5-nfts", config);
+    const response = await axios.get("https://api.thedaygalpuclub.com/api/v1/nfts/top-5-nfts", config);
     const data = await response.json();
     console.log('Top 5 NFTs:', data);
     //return data;
@@ -112,7 +112,7 @@ export const getAllNfts = () => async (dispatch) => {
   };
 
   try {
-    const response = await axios.get("http://localhost:4000/api/v1/nfts", config);
+    const response = await axios.get("https://api.thedaygalpuclub.com/api/v1/nfts", config);
     const data = await response.json();
     console.log('Top 5 NFTs:', data);
     dispatch({

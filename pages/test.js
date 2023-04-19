@@ -17,14 +17,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 //   const [nfts, setNfts] = useState([]);
 
-//   useEffect(() => {
-//     const eventSource = new EventSource(`http://localhost:4000/api/v1/nfts?collectionName=${collectionName}`);
 
-//     eventSource.addEventListener("update", (event) => {
-//       const data = JSON.parse(event.data);
-//       console.log("Data>>", data);
-//       setNfts(data);
-//     });
 
 //     return () => {
 //       eventSource.close();
@@ -75,7 +68,7 @@ const Test = () => {
 
   const [nfts, setNfts] = useState([]);
     useEffect(() => {
-      const eventSource = new EventSource(`http://localhost:4000/api/v1/nfts?collectionName=${collectionName}`);
+      const eventSource = new EventSource(`https://api.thedaygalpuclub.com/api/v1/nfts?collectionName=${collectionName}`);
       eventSource.addEventListener("update", (event) => {
         const data = JSON.parse(event.data);
         console.log("AllNFTs>>", data);
