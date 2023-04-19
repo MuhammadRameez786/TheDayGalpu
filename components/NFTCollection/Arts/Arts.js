@@ -12,7 +12,7 @@ const Arts = () => {
   const [arts, setArts] = useState([]);
 
   useEffect(() => {
-    const eventSource = new EventSource("http://localhost:4000/api/v1/collection");
+    const eventSource = new EventSource("https://api.thedaygalpuclub.com/api/v1/collection");
 
     eventSource.addEventListener("nftCollection", (event) => {
       const data = JSON.parse(event.data);
