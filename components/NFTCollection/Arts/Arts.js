@@ -13,7 +13,6 @@ const Arts = () => {
 
   useEffect(() => {
     const eventSource = new EventSource("https://api.thedaygalpuclub.com/api/v1/collection");
-
     eventSource.addEventListener("nftCollection", (event) => {
       const data = JSON.parse(event.data);
       setArts(data.arts);
