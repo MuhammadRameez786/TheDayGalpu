@@ -29,7 +29,7 @@ const HeroSection = () => {
         </div>
         <div className={Style.heroSection_box_right}>
           <Image
-            src={images.hero}
+            src={"https://res.cloudinary.com/dmesqweam/image/upload/v1683720232/site_images/hero_uw0we8.png"}
             alt="Hero section"
             width={600}
             height={600}
