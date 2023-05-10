@@ -10,7 +10,7 @@ const Service = () => {
       <div className={Style.service_box}>
         <div className={Style.service_box_item}>
           <Image
-            src={images.service1}
+            src={"https://res.cloudinary.com/dmesqweam/image/upload/v1683720970/site_images/service-1_s2bmuc.png"}
             alt="Filter & Discover"
             width={100}
             height={100}
@@ -26,7 +26,7 @@ const Service = () => {
         </div>
         <div className={Style.service_box_item}>
           <Image
-            src={images.service2}
+            src={"https://res.cloudinary.com/dmesqweam/image/upload/v1683720970/site_images/service-2_uanqpi.png"}
             alt="Filter & Discover"
             width={100}
             height={100}
@@ -42,7 +42,7 @@ const Service = () => {
         </div>
         <div className={Style.service_box_item}>
           <Image
-            src={images.service3}
+            src={"https://res.cloudinary.com/dmesqweam/image/upload/v1683720970/site_images/service-3_pypov0.png"}
             alt="Connect Wallet"
             width={100}
             height={100}
@@ -58,7 +58,7 @@ const Service = () => {
         </div>
         <div className={Style.service_box_item}>
           <Image
-            src={images.service1}
+            src={"https://res.cloudinary.com/dmesqweam/image/upload/v1683720970/site_images/service-1_s2bmuc.png"}
             alt="Filter & Discover"
             width={100}
             height={100}
