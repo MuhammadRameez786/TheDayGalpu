@@ -6,7 +6,7 @@ import transferFunds from "./TransferFunds.json";
 
 //NFT MARKETPLACE
 export const NFTMarketplaceAddress =
-  "0x45285596219640D62b8abd4ca3004dD3cEA5D771";
+  "0x59d4db70985b33f2d8e840fdf1d43b17f03a46ba";
 export const NFTMarketplaceABI = nftMarketplace.abi;
 
 //TRANSFER FUNDS
