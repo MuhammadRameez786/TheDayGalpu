@@ -64,7 +64,7 @@ const Profile = ({ currentAccount }) => {
           <div className={Style.profile_menu_one_item}>
             <FaRegImage />
             <p>
-              <Link href={{ pathname: "/myColletions" }}>My Items</Link>
+              <Link href={{ pathname: "/myCollections" }}>My Items</Link>
             </p>
           </div>
           <div className={Style.profile_menu_one_item}>
